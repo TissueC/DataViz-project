@@ -9,6 +9,7 @@
 > python data_parser.py
 python的依赖库有flask 和 pandas：
 > pip install pandas==0.24.2
+
 > pip install flask
 
 **如果有pandas, 也请更新到最新版本0.24.2, 据测试0.23的pandas在处理excel时和0.24有很大不同，会导致最后的页面出现BUG**
