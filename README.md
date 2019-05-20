@@ -6,7 +6,7 @@
 
 > npm install d3-timeline-chart --save
 
-运行data_parser.py
+python3 运行data_parser.py
 
 > python data_parser.py
 
@@ -21,6 +21,12 @@ python的依赖库有flask 和 pandas：
 打开**chrome**, 进入页面http://localhost:5000
 
 *也可以使用其他浏览器，但效果会有比较大的差异*
+
+# 可能出现的问题
+
+1. 运行python时编码方式错误，不能够正确解析
+把static/data/data_preprocessed 以另一种格式（ANSI/UTF-8）另存为当前目录下。
+
 
 # 网页使用简介 四个模块
 ## 模块一：时间线
