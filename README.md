@@ -29,16 +29,20 @@ python的依赖库有flask 和 pandas：
 之后就会显示出该委员的履历时间条
 可以放大缩小以及拖动，可以鼠标停留到时间块显示出具体履历和时间，点击委员名可以弹出对应委员的百度百科网页。
 可以显示多个委员名。
+
 ![展示图](https://github.com/TissueC/DataViz-project/blob/master/images/%E6%A8%A1%E5%9D%97%E4%B8%80.png)
 
 ## 模块二：统计数据图标
 有两种视图：bar和pie 包含了图例
 包含了四类数据：性别、民族、年龄和学历
 可以将鼠标停留到具体的一个矩形/扇形，可以高亮并显示具体数据
+
 ![展示图](https://github.com/TissueC/DataViz-project/blob/master/images/%E6%A8%A1%E5%9D%97%E4%BA%8C1.png)
 ![展示图](https://github.com/TissueC/DataViz-project/blob/master/images/%E6%A8%A1%E5%9D%97%E4%BA%8C2.png)
+
 ## 模块三：轨迹地图
 该模块需要通过和模块四和模块一进行联动，当添加委员时，可以显示出该委员的生涯轨迹和对应的时间点。
+
 ![展示图](https://github.com/TissueC/DataViz-project/blob/master/images/%E6%A8%A1%E5%9D%97%E4%B8%89.png)
 
 ## 模块四：聚类分析（力导图 force-directed graph）
