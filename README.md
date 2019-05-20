@@ -3,11 +3,15 @@
 
 # 使用方法|Usage
 因为有一个timeline-module 需要npm install， 该部分是改自[https://github.com/Genscape/d3-timeline]
+
 > npm install d3-timeline-chart --save
 
 运行data_parser.py
+
 > python data_parser.py
+
 python的依赖库有flask 和 pandas：
+
 > pip install pandas==0.24.2
 
 > pip install flask
