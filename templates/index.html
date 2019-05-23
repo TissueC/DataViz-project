@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>第十九届中央委员统计数据分析</title>
+
+    <link rel="stylesheet" href="../static/css/reset.min.css" />
+    <link rel="stylesheet" href="../static/css/prism.min.css" />
+    <link rel="stylesheet" href="../static/css/example-styles.css" />
+    <link rel="stylesheet" href="../static/css/timeline-chart.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link href="../static/css/mapStyle.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="../static/css/force.css">
+    <link rel="stylesheet" href="../static/css/barChart.css">
+</head>
+
+<body> 
+	<script src="../static/jslib/jquery.min.js"></script>
+    <script src="../static/jslib/prism.min.js"></script>
+    <script src="../static/jslib/d3.min.js"></script>
+    <script src="../static/jslib/d3.v3.min.js"></script>
+    <script src="../static/jslib/d3-tip.min.js"></script>
+    <script src="../static/data/china.city.geo.json" charset="utf-8"></script>
+    <script src="../static/js/d3map.js" charset="utf-8"></script>
+    <div id='part1'>
+    	<center class='title'>委员履历时间线</center>
+    	<div id="btnArea">
+			<button class="addBtn">增加人物进行对比</button>
+			<input type='text' class='addName' placeholder='委员名字'>
+		</div>
+	    <section flex flex-full-center>
+	        <div id="chart"></div>
+	    </section>
+	    <script src="../static/js/timeline-chart.js"></script>
+		<script src="../static/js/button.js"></script>
+	</div>
+	<div id="part2" >
+		<center class='title'>委员基础数据统计</center>
+		<div id="choice2" class='choice'>
+			<label class="choice2-label" for="sex">性别</label>
+			<input type="radio" name="barOption" id="sex" checked="true" />
+			<br/><br/>
+			<label class="choice2-label"for="race">民族</label>
+			<input type="radio" name="barOption" id="race" />
+			<br/><br/>
+			<label class="choice2-label"for="age">年龄</label>
+			<input type="radio" name="barOption" id="age" />
+			<br/><br/>
+			<label class="choice2-label"for="degree">学历</label>
+			<input type="radio" name="barOption" id="degree" />
+			<br/><br/>
+			<input id="changeBtn" type="checkbox"  checked></input>
+			<label class="switch" for="changeBtn" style=" text-align:center;">切换视图</label>
+		</div>
+		<script src="../static/js/barChart.js"></script>
+    </div>
+    <div id="part3">
+    	<center class='title'>委员升迁地理轨迹</center>
+    <script src="../static/js/map.js"></script>
+    </div>
+    <div id="part4">
+    	<center class='title'>委员聚类分析</center>
+    <div id="choice1" class='choice'>
+		<label class='choice1-label' for="province">出生省份</label>
+		<input type="radio" name="forceOption" id="province" checked="true" />
+		<br/><br/>
+		<label class='choice1-label' for="bornYear">出生年份</label>
+		<input type="radio" name="forceOption" id="bornYear" />
+		<br/><br/>
+		<label class='choice1-label' for="college">毕业院校</label>
+		<input type="radio" name="forceOption" id="college" />
+		<br/><br/>
+		<label class='choice1-label' for="major">专业类别</label>
+		<input type="radio" name="forceOption" id="major" />
+    </div>	
+	</div>
+    <script src="../static/jslib/d3.tip.v0.6.3.js"> </script>
+    <script src=../static/js/graph.js></script>
+</body>
+
+</html>

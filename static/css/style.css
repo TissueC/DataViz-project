@@ -1,0 +1,170 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Helvetica, Arial;
+}
+
+input{
+    border: 1px solid #ccc;
+    padding: 7px 0px;
+    border-radius: 3px;
+    padding-left:5px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}
+input:focus{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+
+.title{
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+#part1 center{
+    background-color: pink;
+}
+
+#part2 center{
+    background-color: #8bc34a;
+}
+
+#part3 center{
+    background-color: #cddc39;
+}
+
+#part4 center{
+    background-color:#c7c7c7;
+}
+
+
+#part1{
+    float: left;
+    border:2px solid;
+    width: 62%;
+    display: inline;
+    height:40%;
+    overflow: hidden;
+}
+
+
+#part2 {
+    border:2px solid;
+    position: absolute;
+    left: 62%;
+    width:38%;
+    height: 40%;
+    display: inline;
+    overflow: hidden;
+}
+
+
+#part3{
+    border:2px solid;
+    position: absolute;
+    left:0%;
+    top:40%;
+    width:45%;
+    height:60%;
+    display: inline;
+    overflow: visible;
+}
+
+#part4{
+    border:2px solid;
+    position: absolute;
+    left:45%;
+    top:40%;
+    width:55%;
+    height:60%;
+    display: inline;
+    overflow: visible;
+}
+
+
+
+#btnArea{
+    position: absolute;
+    top:5%;
+    left:10%;
+}
+
+#chart {
+    position: absolute;
+    top:10%;
+    width: 60%;
+    background: #FFFAFA;
+    opacity: 0.9;
+    border-radius: 15px;
+    border: 1px solid #2b2b2b;
+}
+
+#chart line {
+    stroke: #2b2b2b;
+}
+
+#chart line.vertical-marker.now {
+    stroke-width:5px;
+    stroke: red;
+}
+
+rect.interval.blue-interval {
+    fill: blue;
+    stroke: blue;
+}
+
+circle.blue-dot {
+    fill: blue;
+}
+
+/* Override d3tip */
+
+.line {
+    stroke: blue;
+    stroke-width: 1.5px;
+    fill:none;
+}
+
+circle {
+    fill: red;
+}
+#marker {
+  stroke: black;
+    fill: black;
+}
+
+/* Tiny Flex Grid */
+
+[flex] {
+    display: flex;
+}
+[flex-fill] {
+    flex: 1;
+}
+[flex-full-center] {
+    align-items: center;
+    justify-content: center;
+}
+[flex-direction=column] {
+    flex-direction: column;
+}
+[flex-direction=row] {
+    flex-direction: row;
+}
+[flex-size="40"] {
+    flex: 40;
+}
+[flex-size="60"] {
+    flex: 60;
+}

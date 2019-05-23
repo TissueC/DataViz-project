@@ -1,0 +1,42 @@
+
+.node {
+    fill: #ccc;
+    stroke: #fff;
+    stroke-width: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.node:hover {
+    fill: gold !important;
+}
+
+.node text {
+  font: 9px helvetica;
+  margin-left: 5px;
+}
+
+.link {
+    stroke: lightgrey;
+    stroke-width: 2px;
+    opacity: 0.8;
+}
+
+.d3-tip {
+  line-height: 1;
+  color: white;
+  background-color: grey;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+#part4: hover{
+  cursor: -webkit-grab;
+  cursor: grab; 
+}
+
+#part4: active{
+  cursor: -webkit-grabbing;
+  cursor: grabbing; 
+}
+

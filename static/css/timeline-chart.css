@@ -1,0 +1,86 @@
+.timeline-chart .axis path {
+  fill: none;
+  stroke: none; }
+
+.timeline-chart line {
+  stroke: black; }
+
+.timeline-chart .vertical-marker {
+  stroke-width: 1; }
+
+.timeline-chart rect, .timeline-chart rect.chart-bounds {
+  fill: transparent; }
+
+.timeline-chart rect.chart-bounds:hover, .timeline-chart rect.interval:hover {
+  cursor: -webkit-grab;
+  cursor: grab; }
+
+.timeline-chart rect.chart-bounds:active, .timeline-chart rect.interval:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing; }
+
+.timeline-chart .dot:hover {
+  cursor: pointer; }
+
+.timeline-chart .interval-text {
+  pointer-events: auto; }
+
+.timeline-chart rect.interval {
+  ry: 5;
+  rx: 5;
+  stroke: #2b2b2b; 
+  }
+
+.timeline-chart rect.interval:hover{
+  cursor:pointer;
+  stroke-width: 5px;
+  stroke:yellow;
+}
+
+
+.group-label{
+  font-size: 20px;
+  transition: all 0.6s
+}
+
+.group-label:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.deleteBtns{
+  transition: all 0.6s；
+}
+
+.deleteBtns:hover{
+  cursor:pointer;
+  transform: scale(1.05);
+}
+
+.addBtn{
+  background-color: #00ffb8;
+  height:30px;  
+  width:150px;  
+  border:1px solid #9bc0dd;  
+  border-radius:4px; 
+}
+.addBtn:hover{
+  background-color: #00805c;
+  cursor:pointer;
+}
+
+.Chart-d3-tip {
+    color: white;
+    width: 400px;
+    background-color: #e19e9e;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.Chart-d3-tip2 {
+    color: white;
+    width: 260px;
+    background-color: #e19e9e;
+    padding: 5px 5px;
+    border-radius: 5px;
+}

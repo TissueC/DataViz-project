@@ -1,0 +1,47 @@
+
+#changeBtn {
+    margin-left: -9999px;
+    position: absolute;
+}
+
+.switch{
+    line-height: 30px;
+}
+
+label {
+    display: inline-block;
+    height: 35px;
+    width: 80px;
+    line-height: 35px;
+    background-color: #FFF;
+    border: 3px solid blue;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.choice2-label{
+    width: 60px;
+    border:2px solid green;
+}
+
+.choice1-label{
+    border:2px solid green;
+}
+#choice1{
+    position: absolute;
+    top:30%;
+    width: 20%;
+    padding-top: 10px;
+    padding-left: 10px; 
+}
+
+#choice2{
+    position: absolute;
+    top:10%;
+    width: 20%;
+    padding-top: 10px;
+    padding-left: 10px; 
+}
