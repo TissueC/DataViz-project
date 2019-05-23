@@ -1,6 +1,11 @@
 # DataViz-project
 数据可视化大作业，204个中央委员的数据统计，新闻网页模式
 
+# 直接浏览
+可以在浏览器输入http://47.101.205.176:5000 直接进行浏览。
+
+*建议使用chrome + F11 全屏浏览*
+
 # 使用方法|Usage
 因为有一个timeline-module 需要npm install， 该部分是改自[https://github.com/Genscape/d3-timeline]
 
@@ -25,10 +30,16 @@ python的依赖库有flask 和 pandas：
 # 可能出现的问题
 
 1. 运行python时编码方式错误，不能够正确解析
+
 解决办法：把static/data/data_preprocessed 以另一种格式（ANSI/UTF-8）另存为当前目录下。
 
 2. 视图有一部分被遮挡
+
 解决办法：浏览器切换到Chrome，并F11 全屏浏览
+
+3. 视图一显示不出来，该模块无法加载
+
+解决办法：把package-lock.json重命名为package.json, 并在当前文件夹内npm install
 
 # 网页使用简介 四个模块
 ## 整体布局
